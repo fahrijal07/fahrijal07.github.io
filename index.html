@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Fahri Rijal — Portofolio Developer</title>
+<meta name="description" content="Portofolio mahasiswa Teknik Informatika — proyek, skill, dan pengalaman.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="splash" id="splashScreen" aria-hidden="true">
+  <div class="splash-inner">
+    <span class="splash-greeting">Selamat datang di portofolio saya</span>
+    <h1 class="splash-name">Muhammad Fahri Rijal</h1>
+  </div>
+</div>
+
+<div class="aurora" aria-hidden="true">
+  <span class="blob blob-a"></span>
+  <span class="blob blob-b"></span>
+  <span class="blob blob-c"></span>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="navwrap">
+  <nav class="glass navbar" id="navbar">
+    <a href="#top" class="brand">Fahri<span>.dev</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#skill" class="nav-link">Skill</a></li>
+      <li><a href="#proyek" class="nav-link">Proyek</a></li>
+      <li><a href="#pengalaman" class="nav-link">Pengalaman</a></li>
+      <li><a href="#kontak" class="nav-link">Kontak</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn glass" id="themeToggle" aria-label="Ganti tema terang/gelap" title="Ganti tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm" href="assets/CV-Muhammad-Fahri-Rijal.pdf" download>Unduh CV</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glass glass">
+      <p class="eyebrow">Mahasiswa Teknologi Informasi, UIN Salatiga</p>
+      <h1 class="hero-title">Muhammad<span class="hero-title-line2">Fahri Rijal</span></h1>
+      <p class="hero-role">Membangun aplikasi web &amp; mobile yang rapi, cepat, dan enak dipakai.</p>
+      <p class="hero-desc">Fokus di pengembangan front-end dan back-end sederhana, dengan ketertarikan pada desain antarmuka dan data. Terbuka untuk kesempatan magang dan proyek freelance.</p>
+      <div class="hero-cta">
+        <a href="#proyek" class="btn btn-primary">Lihat proyek saya</a>
+        <a href="#kontak" class="btn btn-ghost">Hubungi saya</a>
+      </div>
+    </div>
+
+    <div class="hero-side">
+      <button class="locked-photo glass" id="lockedPhotoBtn" type="button" aria-haspopup="dialog">
+        <div class="locked-photo-media">
+          <div class="photo-placeholder" aria-hidden="true">MFR</div>
+          <!-- Ganti div di atas dengan: <img src="assets/foto-profil.jpg" alt="" class="locked-photo-img"> -->
+        </div>
+        <div class="locked-photo-overlay">
+          <span class="locked-photo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          </span>
+          <span class="locked-photo-label">Hire me to unlock this page</span>
+        </div>
+      </button>
+      <div class="stat-row">
+        <a class="stat-pill glass" href="mailto:fahri.rijal@studentmail.ac.id">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 7 8-7"/></svg>
+          </span>
+          <span class="stat-label">Email</span>
+        </a>
+        <a class="stat-pill glass" href="https://github.com/fahririjal" target="_blank" rel="noopener">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="none"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.87-2.78.62-3.37-1.21-3.37-1.21-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+          </span>
+          <span class="stat-label">GitHub</span>
+        </a>
+        <a class="stat-pill glass" href="https://linkedin.com/in/fahririjal" target="_blank" rel="noopener">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="none"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0ZM3.4 8.75h3.1V21H3.4V8.75Zm6.1 0h2.97v1.68h.04c.41-.78 1.43-1.6 2.94-1.6 3.14 0 3.72 2.07 3.72 4.76V21h-3.1v-5.62c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96V21H9.5V8.75Z"/></svg>
+          </span>
+          <span class="stat-label">LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILL -->
+  <section id="skill" class="section">
+    <div class="section-head">
+      <h2>Skill</h2>
+      <p class="section-sub">Yang paling sering saya pakai untuk membangun sesuatu.</p>
+    </div>
+
+    <div class="skill-icon-grid" id="skillGridSkill">
+      <div class="skill-tile glass">
+        <span class="skill-icon skill-icon-custom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="5" cy="6" r="2.4"/><circle cx="19" cy="6" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M7 7.3 12 15.7M17 7.3 12 15.7M7.4 6h9.2"/></svg>
+        </span>
+        <span>Networking</span>
+      </div>
+      <div class="skill-tile glass">
+        <span class="skill-icon skill-icon-custom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.7 6.3a3 3 0 0 0-4.2 4.2L3 18l3 3 7.5-7.5a3 3 0 0 0 4.2-4.2l-2.1 2.1-2-2 2.1-2.1Z"/></svg>
+        </span>
+        <span>Troubleshooting</span>
+      </div>
+      <div class="skill-tile glass">
+        <span class="skill-icon skill-icon-custom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c3 1.6 5 2 8 2 0 8-3.5 12-8 14-4.5-2-8-6-8-14 3 0 5-.4 8-2Z"/><path d="M9.5 12.5 11 14l3.5-3.5"/></svg>
+        </span>
+        <span>Cybersecurity</span>
+      </div>
+      <div class="skill-tile glass">
+        <span class="skill-icon skill-icon-custom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m8 9-4 4 4 4M16 9l4 4-4 4M13 5l-2 16"/></svg>
+        </span>
+        <span>Development</span>
+      </div>
+      <div class="skill-tile glass">
+        <span class="skill-icon skill-icon-custom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+        </span>
+        <span>Operating System</span>
+      </div>
+      <div class="skill-tile glass">
+        <span class="skill-icon skill-icon-custom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a9 9 0 1 0 9 9c0-1.5-1-2-2-1a3 3 0 0 1-4-4c1-1 .5-2-1-2Z"/><circle cx="7.5" cy="12.5" r="1" fill="currentColor" stroke="none"/><circle cx="10" cy="8" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="8.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span>Design</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-html5-plain skill-icon" aria-hidden="true"></i>
+        <span>HTML</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-css3-plain skill-icon" aria-hidden="true"></i>
+        <span>CSS</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-javascript-plain skill-icon" aria-hidden="true"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-typescript-plain skill-icon" aria-hidden="true"></i>
+        <span>TypeScript</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-java-plain skill-icon" aria-hidden="true"></i>
+        <span>Java</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-php-plain skill-icon" aria-hidden="true"></i>
+        <span>PHP</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-python-plain skill-icon" aria-hidden="true"></i>
+        <span>Python</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-c-plain skill-icon" aria-hidden="true"></i>
+        <span>C</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-csharp-plain skill-icon" aria-hidden="true"></i>
+        <span>C#</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-cplusplus-plain skill-icon" aria-hidden="true"></i>
+        <span>C++</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-kotlin-plain skill-icon" aria-hidden="true"></i>
+        <span>Kotlin</span>
+      </div>
+      <div class="skill-tile glass">
+        <i class="devicon-dart-plain skill-icon" aria-hidden="true"></i>
+        <span>Dart</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYEK -->
+  <section id="proyek" class="section">
+    <div class="section-head">
+      <h2>Proyek</h2>
+      <p class="section-sub">Sebagian proyek yang sudah saya selesaikan atau masih berjalan.</p>
+    </div>
+
+    <div class="filter-bar glass" id="projectFilterBar" role="tablist" aria-label="Filter kategori proyek">
+      <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+      <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+      <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+      <button class="filter-btn" data-filter="other" role="tab" aria-selected="false">Lainnya</button>
+      <span class="filter-indicator" aria-hidden="true"></span>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <article class="project-card glass" data-category="web">
+        <div class="project-media" style="background: linear-gradient(135deg,#3B6EFF55,#22D3B655)">
+          <span class="project-tag-corner">Web</span>
+        </div>
+        <div class="project-body">
+          <h3>Astaguna</h3>
+          <p>Website katering makanan lengkap dengan menu, pemesanan, dan fitur pengingat tugas untuk membantu operasional harian.</p>
+          <ul class="tech-tags">
+            <li>php</li><li>JavaScript</li><li>MySQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Demo</a>
+            <a href="#" class="link-arrow">Kode sumber</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass" data-category="web">
+        <div class="project-media" style="background: linear-gradient(135deg,#3B6EFF55,#8B5CF655)">
+          <span class="project-tag-corner">Web</span>
+        </div>
+        <div class="project-body">
+          <h3>Pengingat Tugas</h3>
+          <p>Aplikasi web untuk mencatat dan mengingatkan tenggat tugas, dilengkapi notifikasi dan penanda prioritas.</p>
+          <ul class="tech-tags">
+            <li>Laravel</li><li>MySQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Demo</a>
+            <a href="#" class="link-arrow">Kode sumber</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass" data-category="mobile">
+        <div class="project-media" style="background: linear-gradient(135deg,#8B5CF655,#3B6EFF55)">
+          <span class="project-tag-corner">Mobile</span>
+        </div>
+        <div class="project-body">
+          <h3>Monify</h3>
+          <p>Aplikasi pengelola keuangan pribadi untuk mencatat pemasukan, pengeluaran, dan melihat ringkasan keuangan bulanan.</p>
+          <ul class="tech-tags">
+            <li>Flutter</li><li>SQLite</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Demo</a>
+            <a href="#" class="link-arrow">Kode sumber</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass" data-category="mobile">
+        <div class="project-media" style="background: linear-gradient(135deg,#22D3B655,#3B6EFF55)">
+          <span class="project-tag-corner">Mobile</span>
+        </div>
+        <div class="project-body">
+          <h3>ADEBI</h3>
+          <p>Aplikasi deteksi bahasa isyarat untuk membantu komunikasi, mengenali gestur tangan secara real-time lewat kamera.</p>
+          <ul class="tech-tags">
+            <li>Flutter</li><li>TensorFlow Lite</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Demo</a>
+            <a href="#" class="link-arrow">Kode sumber</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass" data-category="other">
+        <div class="project-media" style="background: linear-gradient(135deg,#22D3B655,#8B5CF655)">
+          <span class="project-tag-corner">Lainnya</span>
+        </div>
+        <div class="project-body">
+          <h3>Redesain KAI Access</h3>
+          <p>Rancangan ulang antarmuka aplikasi KAI Access dengan fokus pada kemudahan alur pemesanan tiket dan navigasi yang lebih intuitif.</p>
+          <ul class="tech-tags">
+            <li>Figma</li><li>UI/UX</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Lihat desain</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PENGALAMAN -->
+  <section id="pengalaman" class="section">
+    <div class="section-head">
+      <h2>Pengalaman</h2>
+      <p class="section-sub">Perjalanan organisasi, kompetisi, dan kerja praktik.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass">
+          <span class="timeline-date">2026 — Sekarang</span>
+          <h3>Ahli IT — Restoran</h3>
+          <p>Menangani kebutuhan teknologi informasi yayasan secara menyeluruh, mulai dari infrastruktur jaringan hingga dukungan teknis harian.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass">
+          <span class="timeline-date">2023</span>
+          <h3>Team Support — Startup Borneo</h3>
+          <p>Magang menangani dukungan teknis tim dan penyelesaian masalah (troubleshooting) pada sistem yang digunakan sehari-hari.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass">
+          <span class="timeline-date">2022</span>
+          <h3>Teknisi Jaringan — PT Media Cepat Indonesia</h3>
+          <p>Bertanggung jawab atas instalasi jaringan dan penyelesaian masalah (troubleshooting) perangkat serta koneksi di lapangan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="section">
+    <div class="section-head">
+      <h2>Kontak</h2>
+      <p class="section-sub">Ada peluang magang, proyek, atau sekadar diskusi? Kabari saya.</p>
+    </div>
+
+    <div class="contact-grid contact-grid-single">
+      <form class="contact-form glass" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama lengkap" required>
+          <span class="field-error" data-error-for="name"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          <span class="field-error" data-error-for="email"></span>
+        </div>
+        <div class="field">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="4" placeholder="Ceritakan kebutuhan Anda" required></textarea>
+          <span class="field-error" data-error-for="message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Kirim pesan</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Muhammad Fahri Rijal. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+</footer>
+
+<button class="fab glass" id="backToTop" aria-label="Kembali ke atas">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="modal-backdrop" id="photoModal" role="dialog" aria-modal="true" aria-labelledby="photoModalTitle">
+  <div class="modal-box glass">
+    <h3 id="photoModalTitle">Hire me to unlock this page</h3>
+    <p>Foto profil ini sengaja disamarkan. Hubungi saya untuk peluang kerja atau kolaborasi, dan mari mengobrol lebih lanjut.</p>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="photoModalCancel" type="button">Tutup</button>
+      <a class="btn btn-primary" id="photoModalContact" href="#kontak">Hubungi saya</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
